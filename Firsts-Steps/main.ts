@@ -23,10 +23,28 @@ let userId: Id
 
 type Usuario = {id: string, nome: string, data_nascimento: string, password: string}
 
-let user: Usuario*/
+let user: Usuario
 
 interface Usuario{
     nome: string,
     id: number,
     password: string
 }
+*/
+
+type  Pessoa = {
+    nome: string
+    idade: number
+}
+
+interface Aluno extends Pessoa{
+    numero_processo: number
+    curso: string
+}
+
+
+
+let aluno: Aluno;
+
+aluno = {numero_processo: 6653, curso: 'Técnico de Informática', nome: 'Afonso', idade: 19 }
+
