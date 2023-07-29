@@ -71,3 +71,4 @@ interface Medico {
 }
 
 let aluno: Pessoa <Aluno>
+let medico
