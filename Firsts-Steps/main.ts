@@ -8,8 +8,9 @@
 
 //objecto = {id: 1, selecao: 'Brasil', grupo: 'G'}
 
-function soma(num1: number, num2: number) {
+/*function soma(num1: number, num2: number) {
     return num1 + num2
 }
 
 const soma2 = (a: number, b: number) => a + b;
+*/
