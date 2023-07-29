@@ -52,7 +52,7 @@ let aluno: Aluno;
 aluno = {numero_processo: 6653, curso: 'Técnico de Informática', nome: 'Afonso', idade: 19 }
 */
 
-type Pessoa <T> = {
+type Pessoa <T = string> = {
     nome: string
     idade: number
     profissao: T
@@ -73,3 +73,4 @@ interface Medico {
 let aluno: Pessoa <Aluno>
 let medico: Pessoa <Medico>
 let engenheiro: Pessoa <Engenheiro>
+let pessoa: Pessoa
