@@ -30,7 +30,7 @@ interface Usuario{
     id: number,
     password: string
 }
-*/
+
 
 type  Pessoa = {
     nome: string
@@ -40,7 +40,8 @@ type  Pessoa = {
 /*interface Aluno extends Pessoa{
     numero_processo: number
     curso: string
-}*/
+}
+
 type Aluno =  {
     numero_processo: number
     curso: string
@@ -49,4 +50,30 @@ type Aluno =  {
 let aluno: Aluno;
 
 aluno = {numero_processo: 6653, curso: 'Técnico de Informática', nome: 'Afonso', idade: 19 }
+*/
 
+type Pessoa = {
+    nome: string
+    idade: number
+    carro?: string
+}
+
+type Aluno =  Pessoa & {
+    numero_processo: number,
+}
+
+interface Engenheiro  extends Pessoa{
+    crea: string
+}
+
+interface Medico extends Pessoa{
+    crm: string
+}
+
+let aluno: Aluno
+
+aluno = {
+    nome: 'Afonso',
+    idade: 19,
+    numero_processo: 6653
+}
