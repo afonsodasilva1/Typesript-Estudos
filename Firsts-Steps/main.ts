@@ -55,7 +55,7 @@ aluno = {numero_processo: 6653, curso: 'Técnico de Informática', nome: 'Afonso
 type Pessoa = {
     nome: string
     idade: number
-    carro?: string
+    
 }
 
 type Aluno =  Pessoa & {
@@ -71,9 +71,3 @@ interface Medico extends Pessoa{
 }
 
 let aluno: Aluno
-
-aluno = {
-    nome: 'Afonso',
-    idade: 19,
-    numero_processo: 6653
-}
