@@ -37,12 +37,14 @@ type  Pessoa = {
     idade: number
 }
 
-interface Aluno extends Pessoa{
+/*interface Aluno extends Pessoa{
     numero_processo: number
     curso: string
-}
-
-
+}*/
+type Aluno =  {
+    numero_processo: number
+    curso: string
+} & Pessoa
 
 let aluno: Aluno;
 
