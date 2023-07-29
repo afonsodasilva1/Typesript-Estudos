@@ -14,3 +14,19 @@
 
 const soma2 = (a: number, b: number) => a + b;
 */
+
+/*let id: string | number
+
+type Id = string | number
+
+let userId: Id
+
+type Usuario = {id: string, nome: string, data_nascimento: string, password: string}
+
+let user: Usuario*/
+
+interface Usuario{
+    nome: string,
+    id: number,
+    password: string
+}
