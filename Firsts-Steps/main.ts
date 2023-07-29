@@ -52,22 +52,22 @@ let aluno: Aluno;
 aluno = {numero_processo: 6653, curso: 'Técnico de Informática', nome: 'Afonso', idade: 19 }
 */
 
-type Pessoa = {
+type Pessoa <T> = {
     nome: string
     idade: number
-    
+    profissao: T
 }
 
-type Aluno =  Pessoa & {
+type Aluno =  {
     numero_processo: number,
 }
 
-interface Engenheiro  extends Pessoa{
+interface Engenheiro {
     crea: string
 }
 
-interface Medico extends Pessoa{
+interface Medico {
     crm: string
 }
 
-let aluno: Aluno
+let aluno: Pessoa <Aluno>
