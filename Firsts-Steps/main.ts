@@ -50,7 +50,7 @@ type Aluno =  {
 let aluno: Aluno;
 
 aluno = {numero_processo: 6653, curso: 'Técnico de Informática', nome: 'Afonso', idade: 19 }
-*/
+
 
 type Pessoa <T = string> = {
     nome: string
@@ -74,3 +74,12 @@ let aluno: Pessoa <Aluno>
 let medico: Pessoa <Medico>
 let engenheiro: Pessoa <Engenheiro>
 let pessoa: Pessoa
+
+interface Lista <T> {
+    T[]
+}
+*/  
+
+type Lista <T> = T[]
+
+let vetor: Lista<string>
